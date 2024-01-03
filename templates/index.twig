@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ siteUrl }}static/css/home.css" />
+    <link rel="stylesheet" href="{{ siteUrl }}static/css/second.css" />
+    <title>Toby's couch</title>
+</head>
+<body> 
+<h1 id="Logo">Toby's Couches</h1>
+    
+  <div>
+        <nav class="nav">
+        {% for link in header.navLinks.all() %}
+            <a href="#">{{link.linkText}}</a>
+        {% endfor %}
+        </nav>
+    </div>
+
+{% block content %}
+       {# templates inserted here #}
+{% endblock %}
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-info">
+            {{footer.richtext}}
+        </div>
+        
+    </div>
+</footer>
+    
+</body>
+</html>

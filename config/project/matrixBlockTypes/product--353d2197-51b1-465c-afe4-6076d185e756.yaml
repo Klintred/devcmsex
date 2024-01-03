@@ -1,0 +1,138 @@
+field: 337a115b-e733-4ec9-baf0-04cc84622a83 # Product
+fieldLayouts:
+  774518da-56b5-4310-80c6-bfeb2e43d05a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 9e807179-b569-4d19-8778-531324858620 # ProductImage
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 47126789-ed8a-45d8-a09e-d0964e65dcb7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2406bc61-a192-409c-b402-42dcc012dbe0 # ProductName
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 78064d98-52e7-4905-a367-cfa8ff9741c1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 99ea0767-df34-4c32-a38d-24c6dfd69b57 # ProductPrice
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 866008d4-044f-4660-bf4f-37416024b469
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 84d71c46-9f8c-4fbd-839f-bed60fe64c29
+        userCondition: null
+fields:
+  9e807179-b569-4d19-8778-531324858620: # ProductImage
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: productimage
+    instructions: null
+    name: ProductImage
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:08acee01-e977-4652-a273-70cc39b6f7d0' # CompanyAssets
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:08acee01-e977-4652-a273-70cc39b6f7d0' # CompanyAssets
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: 'add a product photo'
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  99ea0767-df34-4c32-a38d-24c6dfd69b57: # ProductPrice
+    columnSuffix: xlhxlgtw
+    contentColumnType: text
+    fieldGroup: null
+    handle: productprice
+    instructions: null
+    name: ProductPrice
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  2406bc61-a192-409c-b402-42dcc012dbe0: # ProductName
+    columnSuffix: yffcirss
+    contentColumnType: text
+    fieldGroup: null
+    handle: productname
+    instructions: null
+    name: ProductName
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: product
+name: Product
+sortOrder: 1

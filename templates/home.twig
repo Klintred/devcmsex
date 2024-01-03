@@ -1,0 +1,47 @@
+{% extends "index" %}
+
+{% block content %}
+    
+
+  <a href="">
+    <header class="bg-image">
+        {% set HeaderImage = entry.headerimage.one() %}
+                    {% if HeaderImage %}
+                        <img src="{{ HeaderImage.getUrl() }}">
+                    {% endif %}
+    </header>
+    </a>
+
+<div id="productstext-container" style="color: inherit; font-size: 2em; font-weight: bold;">
+    {{ entry.productstext}}
+</div>
+
+<div class="allProducts">
+
+{% for productEntry in entry.product %}
+    <div class="products">
+        {% set productimage = productEntry.productimage.one() %}
+
+        <a href="Product.twig">
+            {% if productimage %}
+                <img src="{{ productimage.url }}" alt="">
+            {% else %}
+                <img src="{{ siteUrl }}/path/to/default-image.jpg" alt="Default Image">
+            {% endif %}
+
+            <h2>{{ productEntry.productname }}</h2>
+            <p>€ {{ productEntry.productprice }}</p>
+            <a ><a/>
+            <button class="button">add to cart</button>
+        </a>
+    </div>
+{% endfor %}
+
+
+
+   
+
+   
+</div>
+
+{% endblock %}

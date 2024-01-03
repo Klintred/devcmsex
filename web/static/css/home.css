@@ -1,0 +1,158 @@
+body {
+    background-color: #FDF7E4;
+}
+
+#Logo {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    gap: 100px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+header img:hover {
+    opacity: 0.6;
+    background-color: black;
+}
+
+.allProducts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+#hheader {
+    font-family: copperplate;
+    font-size: 44px;
+}
+
+.products {
+    flex-basis: calc(33.33% - 20px); 
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ccc;
+    padding: 40px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease-in-out;
+    
+    
+}
+
+.products:hover {
+    opacity: 70%;
+}
+
+
+.products img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+.products a {
+    text-decoration: none;
+    color: black;
+}
+.button {
+    background-color: #FDF7E4;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+    
+}
+.button:hover {
+    background-color: #fddf93;
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info,
+.footer-contact {
+    flex-basis: 50%;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-link {
+    display: block;
+    text-decoration: none; /* Remove underline for the link */
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .allProducts {
+        justify-content: center;
+    }
+
+    .products {
+        flex-basis: calc(100% - 20px);
+    }
+
+    .footer-content {
+        flex-direction: column; /* Adjusted to column layout for smaller screens */
+        text-align: center;
+    }
+
+    .footer-info,
+    .footer-contact {
+        margin-bottom: 10px;
+    }
+}

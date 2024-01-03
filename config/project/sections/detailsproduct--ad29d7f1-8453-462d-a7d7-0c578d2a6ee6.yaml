@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: detailsproduct
+name: DetailsProduct
+propagationMethod: all
+siteSettings:
+  ccc03508-0607-4965-a9b2-eea81d347ca3: # Furnitures
+    enabledByDefault: true
+    hasUrls: true
+    template: detailsproduct/_entry
+    uriFormat: 'couch-details-product/{slug}'
+type: channel

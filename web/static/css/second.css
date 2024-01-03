@@ -1,0 +1,120 @@
+body {
+    background-color: #FDF7E4;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    gap: 100px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+
+#Logo {
+    font-family: copperplate;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Added margin for spacing */
+}
+
+.article {
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-around; /* Adjust spacing between items */
+    margin: 20px; /* Added margin for spacing */
+    justify-content: flex-start;
+}
+
+.article div {
+    flex: 1;
+    padding: 20px;
+    text-align: center; /* Center text initially */
+}
+.article div:last-child {
+    text-align: left;
+}
+
+.couch {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.button {
+    background-color: #FDF7E4;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+    
+}
+.button:hover {
+    background-color: #fddf93;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info,
+.footer-contact {
+    flex-basis: 50%;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .article {
+        flex-direction: column; /* Stack items in a column on small screens */
+        align-items: center;
+    }
+
+    .article div {
+        width: 100%; /* Full width for each item on small screens */
+        margin-bottom: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column; /* Adjusted to column layout for smaller screens */
+        text-align: center;
+    }
+
+    .footer-info,
+    .footer-contact {
+        margin-bottom: 10px;
+    }
+}

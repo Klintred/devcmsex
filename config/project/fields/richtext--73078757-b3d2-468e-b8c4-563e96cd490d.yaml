@@ -1,0 +1,19 @@
+columnSuffix: bsljqsgi
+contentColumnType: text
+fieldGroup: 464e541f-01f1-48fc-8bc0-1a63b9d71632 # Common
+handle: richtext
+instructions: null
+name: Richtext
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

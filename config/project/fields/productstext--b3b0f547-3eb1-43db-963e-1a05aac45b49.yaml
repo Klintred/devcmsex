@@ -1,0 +1,27 @@
+columnSuffix: lrnuayhj
+contentColumnType: text
+fieldGroup: b27b54f4-98f0-4265-b3a8-ee4f26cd17d7 # Home Page
+handle: productstext
+instructions: null
+name: ProductsText
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

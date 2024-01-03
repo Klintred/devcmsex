@@ -1,0 +1,55 @@
+dateModified: 1704306300
+email:
+  fromEmail: thibault.rondelez1@gmail.com
+  fromName: Furnitures
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  assets:
+    hasUrls: true
+    name: Assets
+    settings:
+      path: '@webroot'
+    type: craft\fs\Local
+    url: '@web'
+meta:
+  __names__:
+    3c99f5a9-3366-451b-b2ad-e14b5b02a275: 'Nav Links' # Nav Links
+    4d191832-2b38-4b19-96d0-df9c7bb64b6c: Home # Home
+    08acee01-e977-4652-a273-70cc39b6f7d0: CompanyAssets # CompanyAssets
+    9e807179-b569-4d19-8778-531324858620: ProductImage # ProductImage
+    19d5b11d-9011-48d9-a727-48b684f33a7d: Home # Home
+    20ee3e0c-a0ab-45e7-9e06-2fade9c2dd14: 'Link Destination' # Link Destination
+    48fec62c-17d6-4bfe-87f2-5d86e260d0c3: HeaderImage # HeaderImage
+    50f9d992-012d-4e1d-9237-9d56019f6d97: Furnitures # Furnitures
+    99ea0767-df34-4c32-a38d-24c6dfd69b57: ProductPrice # ProductPrice
+    337a115b-e733-4ec9-baf0-04cc84622a83: Product # Product
+    353d2197-51b1-465c-afe4-6076d185e756: Product # Product
+    434a4401-7f19-4d07-9cdb-3d3a266b9124: Footer # Footer
+    464e541f-01f1-48fc-8bc0-1a63b9d71632: Common # Common
+    2406bc61-a192-409c-b402-42dcc012dbe0: ProductName # ProductName
+    8804f594-73e5-4fbc-b8aa-d3b901f05978: 'Link Text' # Link Text
+    73078757-b3d2-468e-b8c4-563e96cd490d: Richtext # Richtext
+    ad29d7f1-8453-462d-a7d7-0c578d2a6ee6: DetailsProduct # DetailsProduct
+    b3b0f547-3eb1-43db-963e-1a05aac45b49: ProductsText # ProductsText
+    b27b54f4-98f0-4265-b3a8-ee4f26cd17d7: 'Home Page' # Home Page
+    ba9c80ea-d19c-4eaa-a38e-10c9027cd508: Link # Link
+    ca3a3026-6958-4a30-9775-a857c543e20a: Default # Default
+    ccc03508-0607-4965-a9b2-eea81d347ca3: Furnitures # Furnitures
+    f4a73918-5d37-4549-8ab1-c15fc1df8a55: Header # Header
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: solo
+  live: true
+  name: Furnitures
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
