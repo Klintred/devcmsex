@@ -1,0 +1,19 @@
+columnSuffix: rdewuvfe
+contentColumnType: text
+fieldGroup: a8f342e5-2523-49ca-bcd5-50e1fb2df833 # Details
+handle: details
+instructions: null
+name: Details
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

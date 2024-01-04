@@ -5,6 +5,18 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            elementCondition: null
+            fieldUid: 089d60bd-21d8-4870-b0ec-6dbcf81f062d # ImageProduct
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5eba5d62-c570-4ea7-a100-c3a15f1e2f7a
+            userCondition: null
+            warning: null
+            width: 100
+          -
             autocapitalize: true
             autocomplete: false
             autocorrect: true
@@ -33,13 +45,37 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 337a115b-e733-4ec9-baf0-04cc84622a83 # Product
+            fieldUid: 60c1010b-8840-493a-9859-23eccd8c7fd4 # Colorway
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 2401b1ef-000e-433d-8545-5bbdad600f8a
+            uid: ddee4bee-3cfe-4619-8a89-eb91e7ce422d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7b05b2d5-6a30-42e8-8710-bfc6b784eaba # Price
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e30bff77-3427-4654-89ee-3e1d7fa7f012
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: cb2cc859-73b5-4726-a4f8-c56e793646a2 # Details
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ba17f18a-aecc-4f81-8468-04f72aa41f2b
             userCondition: null
             warning: null
             width: 100

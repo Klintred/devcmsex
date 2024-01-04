@@ -12,29 +12,54 @@
     </header>
     </a>
 
+    
+
 <div id="productstext-container" style="color: inherit; font-size: 2em; font-weight: bold;">
     {{ entry.productstext}}
 </div>
 
+<div class="filter-options">
+    <form method="get">
+        <label for="price-filter" class="filter-label">Sort by Price:</label>
+        <select id="price-filter" name="price-filter" class="filter-select">
+            <option value="asc">Least to Most Expensive</option>
+            <option value="desc">Most to Least Expensive</option>
+        </select>
+        <button type="submit" class="filter-button">Apply</button>
+    </form>
+</div>
+
+
+{% set sortBy = craft.app.request.getParam('price-filter') ?? 'asc' %}
+{% set entries = craft.entries()
+    .section('detailsproduct')
+    .orderBy('price ' ~ sortBy)
+    .all() %}
+
 <div class="allProducts">
 
-{% for productEntry in entry.product %}
-    <div class="products">
-        {% set productimage = productEntry.productimage.one() %}
+{% set entries = craft.entries().section('detailsproduct').all() %}
+        {% for entry in entries %}
 
-        <a href="Product.twig">
-            {% if productimage %}
-                <img src="{{ productimage.url }}" alt="">
+    <div class="products">
+    
+
+        {% set imageproduct = entry.imageproduct.one() %}
+
+        <a href="couch-details-product/{{entry.slug}}">
+            {% if imageproduct %}
+                <img src="{{ imageproduct.url }}" alt="">
             {% else %}
                 <img src="{{ siteUrl }}/path/to/default-image.jpg" alt="Default Image">
             {% endif %}
 
-            <h2>{{ productEntry.productname }}</h2>
-            <p>€ {{ productEntry.productprice }}</p>
+            <h2>{{ entry.title }}</h2>
+            <p>€ {{ entry.price }}</p>
             <a ><a/>
             <button class="button">add to cart</button>
         </a>
-    </div>
+        
+</div>
 {% endfor %}
 
 
