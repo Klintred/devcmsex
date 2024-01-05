@@ -61,18 +61,6 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
-            fieldUid: 337a115b-e733-4ec9-baf0-04cc84622a83 # Product
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: f588d47d-1f29-4570-b64f-f2475c06ed6e
-            userCondition: null
-            warning: null
-            width: 100
         name: ProductSection
         uid: 9c74c558-403d-4eeb-8d24-0152565536e7
         userCondition: null

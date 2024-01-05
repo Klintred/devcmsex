@@ -18,25 +18,20 @@
     {{ entry.productstext}}
 </div>
 
-<div class="filter-options">
-    <form method="get">
-        <label for="price-filter" class="filter-label">Sort by Price:</label>
-        <select id="price-filter" name="price-filter" class="filter-select">
+<div class="sorting-options">
+        <label for="sort-by">Sort by Price:</label>
+        <select id="sort-by">
             <option value="asc">Least to Most Expensive</option>
             <option value="desc">Most to Least Expensive</option>
         </select>
-        <button type="submit" class="filter-button">Apply</button>
-    </form>
-</div>
+    </div>
 
 
-{% set sortBy = craft.app.request.getParam('price-filter') ?? 'asc' %}
-{% set entries = craft.entries()
-    .section('detailsproduct')
-    .orderBy('price ' ~ sortBy)
-    .all() %}
+
 
 <div class="allProducts">
+
+
 
 {% set entries = craft.entries().section('detailsproduct').all() %}
         {% for entry in entries %}
@@ -54,8 +49,7 @@
             {% endif %}
 
             <h2>{{ entry.title }}</h2>
-            <p>€ {{ entry.price }}</p>
-            <a ><a/>
+            <p class="product-price" >€ {{ entry.price }}</p>
             <button class="button">add to cart</button>
         </a>
         
@@ -68,5 +62,8 @@
 
    
 </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ siteUrl }}/static/home.js"></script>
 
 {% endblock %}

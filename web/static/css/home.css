@@ -124,38 +124,37 @@ header img:hover {
     text-decoration: none; /* Remove underline for the link */
 }
 
-.filter-options {
-    margin-top: 20px;
+.sorting-options {
+    margin-bottom: 20px;
 }
 
-.filter-options form {
+label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#sort-by {
+    padding: 8px;
+    font-size: 14px;
+    background-color: #FDF7E4;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+    
+}
+
+#sort-by:hover {
+    background-color: #fddf93;
+}
+
+
+
+/* Optional: Add some styling for better appearance */
+.sorting-options {
     display: flex;
     align-items: center;
+    
 }
 
-.filter-label {
-    margin-right: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-}
-
-.filter-select {
-    padding: 8px;
-    font-size: 16px;
-}
-
-.filter-button {
-    padding: 8px 15px;
-    background-color: #fddf93;
-    border: 1px solid #000000;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.filter-button:hover {
-    background-color: #FDF7E4;
-}
 
 
 
