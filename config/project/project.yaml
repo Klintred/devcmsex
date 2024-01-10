@@ -1,4 +1,4 @@
-dateModified: 1704366968
+dateModified: 1704838451
 email:
   fromEmail: thibault.rondelez1@gmail.com
   fromName: Furnitures
@@ -17,19 +17,14 @@ meta:
     4d191832-2b38-4b19-96d0-df9c7bb64b6c: Home # Home
     7b05b2d5-6a30-42e8-8710-bfc6b784eaba: Price # Price
     08acee01-e977-4652-a273-70cc39b6f7d0: CompanyAssets # CompanyAssets
-    9e807179-b569-4d19-8778-531324858620: ProductImage # ProductImage
     19d5b11d-9011-48d9-a727-48b684f33a7d: Home # Home
     20ee3e0c-a0ab-45e7-9e06-2fade9c2dd14: 'Link Destination' # Link Destination
     48fec62c-17d6-4bfe-87f2-5d86e260d0c3: HeaderImage # HeaderImage
     50f9d992-012d-4e1d-9237-9d56019f6d97: Furnitures # Furnitures
     60c1010b-8840-493a-9859-23eccd8c7fd4: Colorway # Colorway
     089d60bd-21d8-4870-b0ec-6dbcf81f062d: ImageProduct # ImageProduct
-    99ea0767-df34-4c32-a38d-24c6dfd69b57: ProductPrice # ProductPrice
-    337a115b-e733-4ec9-baf0-04cc84622a83: Product # Product
-    353d2197-51b1-465c-afe4-6076d185e756: Product # Product
     434a4401-7f19-4d07-9cdb-3d3a266b9124: Footer # Footer
     464e541f-01f1-48fc-8bc0-1a63b9d71632: Common # Common
-    2406bc61-a192-409c-b402-42dcc012dbe0: ProductName # ProductName
     8804f594-73e5-4fbc-b8aa-d3b901f05978: 'Link Text' # Link Text
     73078757-b3d2-468e-b8c4-563e96cd490d: Richtext # Richtext
     a8f342e5-2523-49ca-bcd5-50e1fb2df833: Details # Details
@@ -42,6 +37,10 @@ meta:
     ccc03508-0607-4965-a9b2-eea81d347ca3: Furnitures # Furnitures
     f4a73918-5d37-4549-8ab1-c15fc1df8a55: Header # Header
 plugins:
+  element-api:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   redactor:
     edition: standard
     enabled: true
